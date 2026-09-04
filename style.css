@@ -1776,13 +1776,13 @@ h2 em {
 
 .reveal {
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity .7s ease, transform .7s ease;
+  translate: 0 20px;
+  transition: opacity .7s ease, translate .7s ease;
 }
 
 .reveal.visible {
   opacity: 1;
-  transform: translateY(0);
+  translate: 0 0;
 }
 
 @media (max-width: 900px) {
