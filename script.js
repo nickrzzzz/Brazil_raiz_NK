@@ -1,4 +1,3 @@
-
 /*
  * Integrações: preencha estas constantes quando os dados oficiais estiverem disponíveis.
  * O formulário permanece em modo demonstração enquanto FORM_ENDPOINT estiver vazio.

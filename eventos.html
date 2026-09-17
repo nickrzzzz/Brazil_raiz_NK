@@ -1,159 +1,64 @@
 <!doctype html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Confira os eventos realizados pela Brasil Raiz e conheça as histórias de cada departamento." />
+    <meta name="theme-color" content="#00A859" />
+    <meta property="og:title" content="Eventos realizados | Brasil Raiz" />
+    <meta property="og:description" content="Memórias, encontros e experiências da Brasil Raiz." />
+    <meta property="og:type" content="website" />
+    <title>Eventos realizados | Brasil Raiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo principal</a>
+    <header class="site-header">
+      <a class="brand" href="index.html#inicio" aria-label="Brasil Raiz, início"><span class="brand-mark" aria-hidden="true">✳</span><span>Brasil<br /><em>Raiz</em></span></a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
+      <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+        <a href="index.html#inicio">Início</a><a href="index.html#sobre">Sobre nós</a><a href="eventos.html" aria-current="page">Eventos</a><a href="departamentos/index.html">Departamentos</a><a href="index.html#depoimentos">Depoimentos</a><a href="index.html#contato">Contato</a>
+      </nav>
+      <a class="button button-small button-yellow header-cta" href="index.html#inscricao">Quero participar <span>↗</span></a>
+    </header>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Confira os eventos realizados pela Brasil Raiz e conheça as histórias de cada departamento." />
-  <meta name="theme-color" content="#00A859" />
-  <meta property="og:title" content="Eventos realizados | Brasil Raiz" />
-  <meta property="og:description" content="Memórias, encontros e experiências da Brasil Raiz." />
-  <meta property="og:type" content="website" />
-  <title>Eventos realizados | Brasil Raiz</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-</head>
+    <main id="conteudo">
+      <section class="inner-hero" aria-labelledby="events-page-title">
+        <div class="reveal"><p class="eyebrow light">Histórias que já vivemos</p><h1 id="events-page-title">Eventos que deixam<br /><em>raízes.</em></h1><p>Conheça os encontros realizados pela Brasil Raiz e descubra o papel de cada departamento em nossas experiências.</p></div>
+      </section>
 
-<body>
-  <a class="skip-link" href="#conteudo">Ir para o conteúdo principal</a>
-  <header class="site-header">
-    <a class="brand" href="index.html#inicio" aria-label="Brasil Raiz, início"><span class="brand-mark"
-        aria-hidden="true">✳</span><span>Brasil<br /><em>Raiz</em></span></a>
-    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false"
-      aria-controls="main-nav"><span></span><span></span></button>
-    <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
-      <a href="index.html#inicio">Início</a><a href="index.html#sobre">Sobre nós</a><a href="eventos.html"
-        aria-current="page">Eventos</a><a href="departamentos/index.html">Departamentos</a><a
-        href="index.html#depoimentos">Depoimentos</a><a href="index.html#contato">Contato</a>
-    </nav>
-    <a class="button button-small button-yellow header-cta" href="index.html#inscricao">Quero participar
-      <span>↗</span></a>
-  </header>
-
-  <main id="conteudo">
-    <section class="inner-hero" aria-labelledby="events-page-title">
-      <div class="reveal">
-        <p class="eyebrow light">Histórias que já vivemos</p>
-        <h1 id="events-page-title">Eventos que deixam<br /><em>raízes.</em></h1>
-        <p>Conheça os encontros realizados pela Brasil Raiz e descubra o papel de cada departamento em nossas
-          experiências.</p>
-      </div>
-    </section>
-
-    <section class="archive section-pad" aria-labelledby="archive-title">
-      <div class="section-intro reveal">
-        <div>
-          <p class="eyebrow">Arquivo de experiências</p>
-          <h2 id="archive-title">Memórias<br /><em>compartilhadas.</em></h2>
+      <section class="archive section-pad" aria-labelledby="archive-title">
+        <div class="section-intro reveal">
+          <div><p class="eyebrow">Arquivo de experiências</p><h2 id="archive-title">Memórias<br /><em>compartilhadas.</em></h2></div>
+          <p class="section-note">Conteúdo demonstrativo. As fotos e informações oficiais serão inseridas na próxima etapa.</p>
         </div>
-        <p class="section-note">Conteúdo demonstrativo. As fotos e informações oficiais serão inseridas na próxima
-          etapa.</p>
-      </div>
-      <div class="archive-filters reveal">
-        <label for="department-filter">Filtrar por departamento</label>
-        <select id="department-filter">
-          <option value="all">Todos os departamentos</option>
-          <option value="rh">RH</option>
-          <option value="ti">TI</option>
-          <option value="comunicacao">Comunicação</option>
-          <option value="eventos">Eventos</option>
-          <option value="marketing">Marketing</option>
-        </select>
-        <label for="year-filter">Filtrar por ano</label>
-        <select id="year-filter">
-          <option value="all">Todos os anos</option>
-          <option value="2026">2026 — demonstração</option>
-          <option value="2025">2025 — demonstração</option>
-        </select>
-      </div>
-      <p class="archive-empty" id="archive-empty" hidden>Nenhum evento encontrado com esses filtros.</p>
-      <div class="archive-grid" id="archive-grid">
-        <article class="archive-card reveal" data-department="rh" data-year="2026"><a
-            href="evento.html?evento=rh-integracao">
-            <div class="archive-image archive-image-rh" role="img"
-              aria-label="Imagem demonstrativa de integração de equipe"></div>
-            <div class="archive-card-body"><span class="archive-tag">RH • 2026 demonstrativo</span>
-              <h3>Integração que aproxima</h3>
-              <p>Um encontro para fortalecer vínculos e celebrar pessoas.</p><strong>Ver detalhes
-                <span>↗</span></strong>
-            </div>
-          </a></article>
-        <article class="archive-card reveal" data-department="ti" data-year="2026"><a
-            href="evento.html?evento=ti-inovacao">
-            <div class="archive-image archive-image-ti" role="img"
-              aria-label="Imagem demonstrativa de pessoas trabalhando com tecnologia"></div>
-            <div class="archive-card-body"><span class="archive-tag">TI • 2026 demonstrativo</span>
-              <h3>Ideias em movimento</h3>
-              <p>Inovação, colaboração e tecnologia em um só encontro.</p><strong>Ver detalhes <span>↗</span></strong>
-            </div>
-          </a></article>
-        <article class="archive-card reveal" data-department="comunicacao" data-year="2025"><a
-            href="evento.html?evento=comunicacao-conexao">
-            <div class="archive-image archive-image-comunicacao" role="img"
-              aria-label="Imagem demonstrativa de comunicação entre pessoas"></div>
-            <div class="archive-card-body"><span class="archive-tag">Comunicação • 2025 demonstrativo</span>
-              <h3>Conexões que comunicam</h3>
-              <p>Um espaço para trocar histórias, ideias e diferentes perspectivas.</p><strong>Ver detalhes
-                <span>↗</span></strong>
-            </div>
-          </a></article>
-        <article class="archive-card reveal" data-department="eventos" data-year="2025"><a
-            href="evento.html?evento=eventos-encontro">
-            <div class="archive-image archive-image-eventos" role="img"
-              aria-label="Imagem demonstrativa de um evento com participantes"></div>
-            <div class="archive-card-body"><span class="archive-tag">Eventos • 2025 demonstrativo</span>
-              <h3>Encontro em cada detalhe</h3>
-              <p>Planejamento, acolhimento e presença para criar boas memórias.</p><strong>Ver detalhes
-                <span>↗</span></strong>
-            </div>
-          </a></article>
-        <article class="archive-card reveal" data-department="marketing" data-year="2025"><a
-            href="evento.html?evento=marketing-experiencia">
-            <div class="archive-image archive-image-marketing" role="img"
-              aria-label="Imagem demonstrativa de ação de marketing"></div>
-            <div class="archive-card-body"><span class="archive-tag">Marketing • 2025 demonstrativo</span>
-              <h3>Marcas que se encontram</h3>
-              <p>Uma experiência para aproximar ideias, pessoas e propósitos.</p><strong>Ver detalhes
-                <span>↗</span></strong>
-            </div>
-          </a></article>
-      </div>
-    </section>
-
-    <section class="archive-cta">
-      <p class="eyebrow">Quer participar?</p>
-      <h2>Faça parte dos<br /><em>próximos encontros.</em></h2><a class="button button-dark"
-        href="index.html#inscricao">Quero participar <span>→</span></a>
-    </section>
-  </main>
-  <footer class="site-footer" id="contato">
-    <div class="footer-top"><a class="brand footer-brand" href="index.html#inicio"
-        aria-label="Brasil Raiz, início"><span class="brand-mark"
-          aria-hidden="true">✳</span><span>Brasil<br /><em>Raiz</em></span></a>
-      <p>Brasil Raiz.<br /><em>Cultura, conexão e experiências que fortalecem nossas origens.</em></p>
-      <div class="footer-links">
-        <div>
-          <p class="eyebrow">Navegue</p><a href="index.html#sobre">Sobre nós</a><a href="eventos.html">Eventos</a><a
-            href="departamentos/index.html">Departamentos</a>
+        <div class="archive-filters reveal">
+          <label for="department-filter">Filtrar por departamento</label>
+          <select id="department-filter"><option value="all">Todos os departamentos</option><option value="rh">RH</option><option value="ti">TI</option><option value="comunicacao">Comunicação</option><option value="eventos">Eventos</option><option value="marketing">Marketing</option></select>
+          <label for="year-filter">Filtrar por ano</label>
+          <select id="year-filter"><option value="all">Todos os anos</option><option value="2026">2026 — demonstração</option><option value="2025">2025 — demonstração</option></select>
         </div>
-        <div>
-          <p class="eyebrow">Fale com a gente</p><a href="mailto:Braraiz2025@gmail.com">Braraiz2025@gmail.com</a><a
-            href="https://www.instagram.com/brasilraiz1?igsi=ZGpudjduamprNzRq&utm_source=qr" target="_blank"
-            rel="noopener noreferrer">@brasilraiz1 ↗</a>
+        <p class="archive-empty" id="archive-empty" hidden>Nenhum evento encontrado com esses filtros.</p>
+        <div class="archive-grid" id="archive-grid">
+          <article class="archive-card reveal" data-department="rh" data-year="2026"><a href="evento.html?evento=rh-integracao"><div class="archive-image archive-image-rh" role="img" aria-label="Imagem demonstrativa de integração de equipe"></div><div class="archive-card-body"><span class="archive-tag">RH • 2026 demonstrativo</span><h3>Integração que aproxima</h3><p>Um encontro para fortalecer vínculos e celebrar pessoas.</p><strong>Ver detalhes <span>↗</span></strong></div></a></article>
+          <article class="archive-card reveal" data-department="ti" data-year="2026"><a href="evento.html?evento=ti-inovacao"><div class="archive-image archive-image-ti" role="img" aria-label="Imagem demonstrativa de pessoas trabalhando com tecnologia"></div><div class="archive-card-body"><span class="archive-tag">TI • 2026 demonstrativo</span><h3>Ideias em movimento</h3><p>Inovação, colaboração e tecnologia em um só encontro.</p><strong>Ver detalhes <span>↗</span></strong></div></a></article>
+          <article class="archive-card reveal" data-department="comunicacao" data-year="2025"><a href="evento.html?evento=comunicacao-conexao"><div class="archive-image archive-image-comunicacao" role="img" aria-label="Imagem demonstrativa de comunicação entre pessoas"></div><div class="archive-card-body"><span class="archive-tag">Comunicação • 2025 demonstrativo</span><h3>Conexões que comunicam</h3><p>Um espaço para trocar histórias, ideias e diferentes perspectivas.</p><strong>Ver detalhes <span>↗</span></strong></div></a></article>
+          <article class="archive-card reveal" data-department="eventos" data-year="2025"><a href="evento.html?evento=eventos-encontro"><div class="archive-image archive-image-eventos" role="img" aria-label="Imagem demonstrativa de um evento com participantes"></div><div class="archive-card-body"><span class="archive-tag">Eventos • 2025 demonstrativo</span><h3>Encontro em cada detalhe</h3><p>Planejamento, acolhimento e presença para criar boas memórias.</p><strong>Ver detalhes <span>↗</span></strong></div></a></article>
+          <article class="archive-card reveal" data-department="marketing" data-year="2025"><a href="evento.html?evento=marketing-experiencia"><div class="archive-image archive-image-marketing" role="img" aria-label="Imagem demonstrativa de ação de marketing"></div><div class="archive-card-body"><span class="archive-tag">Marketing • 2025 demonstrativo</span><h3>Marcas que se encontram</h3><p>Uma experiência para aproximar ideias, pessoas e propósitos.</p><strong>Ver detalhes <span>↗</span></strong></div></a></article>
         </div>
-      </div>
-    </div>
-    <div class="footer-bottom"><span>© 2026 Brasil Raiz</span><span>Conteúdo demonstrativo</span><a
-        href="index.html#contato">Política de privacidade</a></div>
-  </footer>
-  <div class="toast" role="status" aria-live="polite"></div>
-  <script src="script.js"></script>
-</body>
+      </section>
 
+      <section class="archive-cta"><p class="eyebrow">Quer participar?</p><h2>Faça parte dos<br /><em>próximos encontros.</em></h2><a class="button button-dark" href="index.html#inscricao">Quero participar <span>→</span></a></section>
+    </main>
+    <footer class="site-footer" id="contato">
+      <div class="footer-top"><a class="brand footer-brand" href="index.html#inicio" aria-label="Brasil Raiz, início"><span class="brand-mark" aria-hidden="true">✳</span><span>Brasil<br /><em>Raiz</em></span></a><p>Brasil Raiz.<br /><em>Cultura, conexão e experiências que fortalecem nossas origens.</em></p><div class="footer-links"><div><p class="eyebrow">Navegue</p><a href="index.html#sobre">Sobre nós</a><a href="eventos.html">Eventos</a><a href="departamentos/index.html">Departamentos</a></div><div><p class="eyebrow">Fale com a gente</p><a href="mailto:Braraiz2025@gmail.com">Braraiz2025@gmail.com</a><a href="https://www.instagram.com/brasilraiz1?igsi=ZGpudjduamprNzRq&utm_source=qr" target="_blank" rel="noopener noreferrer">@brasilraiz1 ↗</a></div></div></div>
+      <div class="footer-bottom"><span>© 2026 Brasil Raiz</span><span>Conteúdo demonstrativo</span><a href="index.html#contato">Política de privacidade</a></div>
+    </footer>
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
 </html>
 
